@@ -1,7 +1,7 @@
 from http import HTTPStatus
 
 
-def test_read_root_deve_retornar_ok_e_ola_mundo(client):
+def test_read_root_must_return_ok_and_hello_world(client):
     response = client.get('/')
 
     assert response.status_code == HTTPStatus.OK
